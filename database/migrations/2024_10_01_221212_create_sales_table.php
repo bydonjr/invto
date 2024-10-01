@@ -13,8 +13,13 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('customer_id')->constrained('customers')->onDelete('cascade');
+            $table->decimal('subtotal', 10, 2);
+            $table->decimal('tax_amount', 10, 2);
+            $table->decimal('total_amount', 10, 2);
             $table->timestamps();
         });
+        
     }
 
     /**

@@ -7,6 +7,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SalesController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,25 +47,22 @@ Route::controller(AdminController::class)->group(function () {
 // Customers All Route
 
 Route::controller(CustomerController::class)->group(function () {
-    
+
     Route::get('/customer/create', [CustomerController::class, 'Create'])->name('customer.create');
     Route::post('/customer/store', [CustomerController::class, 'store'])->name('customer.store');
-
     Route::get('/customer/all', 'Show')->name('customer.view');
-    
+
 
   });
 
   // Products All Route
 
 Route::controller(ProductController::class)->group(function () {
-    
+
     Route::get('/product/create', 'Create')->name('product.create');
     Route::post('/products', [ProductController::class, 'store'])->name('products.store');
-    
-
     Route::get('/product/all', 'show')->name('product.view');
-    
+
 
   });
 
@@ -72,6 +70,10 @@ Route::controller(ProductController::class)->group(function () {
 Route::controller(SalesController::class)->group(function () {
 
     Route::get('/pos', 'POS')->name('sales.create');
+    Route::get('/sales', [SalesController::class, 'create'])->name('sales.create');
+    Route::post('/sales/store', [SalesController::class, 'store'])->name('sales.store');
+    Route::get('/sales/view', [SalesController::class, 'index'])->name('sales.index');
     Route::get('/sales/all', 'Sales')->name('sales.create');
 
 });
+

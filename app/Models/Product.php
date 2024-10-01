@@ -14,4 +14,9 @@ class Product extends Model
         'photo',
         'price',
     ];
+
+    public function salesItems()
+    {
+        return $this->hasMany(SaleItem::class);
+    }
 }
