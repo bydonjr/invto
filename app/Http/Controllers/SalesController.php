@@ -54,9 +54,21 @@ class SalesController extends Controller
         return view('sales.view', compact('sales'));
     }
 
-
-    public function Sales()
+    public function destroy($id)
     {
-        return view('sales.view');
+        $sale = Sale::findOrFail($id);
+        $sale->delete();
+
+        return redirect()->route('sales.index')->with('success', 'Sale deleted successfully.');
     }
+
+
+
+
+//    public function Sales()
+//    {
+//        return view('sales.view');
+//    }
+
+
 }

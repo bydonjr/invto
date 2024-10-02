@@ -3,7 +3,7 @@
 <nav class="nxl-navigation">
         <div class="navbar-wrapper">
             <div class="m-header">
-                <a href="index.html" class="b-brand">
+                <a href="/dashboard" class="b-brand">
                     <!-- ========   change your logo hear   ============ -->
                     <img src="{{ asset('backend/assets/images/logo-full.png') }}" alt="" class="logo logo-lg" />
                     <img src="{{ asset('backend/assets/images/logo-abbr.png') }}" alt="" class="logo logo-sm" />
@@ -19,11 +19,11 @@
                             <span class="nxl-micon"><i class="feather-airplay"></i></span>
                             <span class="nxl-mtext">Dashboards</span><span class="nxl-arrow"></span>
                         </a>
-                        
+
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+                            <span class="nxl-micon"><i class="feather-users"></i></span>
                             <span class="nxl-mtext">Customers</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
@@ -33,7 +33,7 @@
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+                            <span class="nxl-micon"><i class="feather-briefcase"></i></span>
                             <span class="nxl-mtext">Products</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
@@ -43,15 +43,15 @@
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
-                            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+                            <span class="nxl-micon"><i class="feather-dollar-sign"></i></span>
                             <span class="nxl-mtext">Sales</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="/pos">POS</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="/sales/all">All Sales</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="/sales/view">All Sales</a></li>
                         </ul>
                     </li>
-                    
+
 
                 <div class="card text-center">
                     <div class="card-body">
